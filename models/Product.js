@@ -33,6 +33,10 @@ Product.init(
       type: DataTypes.INTEGER,
       allowNull:false,
       defaultValue: 10,
+    },
+    product_name: {
+      type: DataTypes.STRING,
+      allowNull: false
     }
 
   },
