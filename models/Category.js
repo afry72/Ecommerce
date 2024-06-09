@@ -5,8 +5,17 @@ const sequelize = require('../config/connection.js');
 class Category extends Model {}
 
 Category.init(
+  //create data id and name data type is interger, has a primary key, auto increments id
   {
-    // define columns
+    id: {
+      type: DataTypes.INTEGER,
+      primaryKey: true,
+      autoIncrement: true,
+    },
+    name: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    }
   },
   {
     sequelize,
